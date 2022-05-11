@@ -1,0 +1,139 @@
+body {
+    background-color: #2f3e46;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #a8dadc;
+    max-width: 700px;
+    width: 95%;
+    border: 1px solid #ffb703;
+    margin: auto;
+    min-height: 90vh; /*vh is viewport height, basically 100vh is 100% of the page ezpz*/
+    margin-top: 5vh; /*good way to center elements on screen i guess*/
+    border-radius: 5px;
+    position: relative;
+}
+#title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+#todoInput {
+    width: 60%;
+    height: 20px;
+    border-radius: 5px;
+}
+button {
+    background-color: #ddd;
+    height: 25px;
+    border: 1px solid #555;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+#input {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+#list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul#list li {
+    list-style: none;
+    padding: 10px;
+    font-size: 1.2em;
+
+    border: 1px solid black;
+    background-color: #78cacd;
+    width: 60.5%;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 2vh;
+    
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+
+    transition: .3s all ease;
+
+    position: relative; /*for the absolute positioning of .closeBtn*/
+}
+ul#list li:hover {
+    background-color: #39acb0;
+}
+ul#list li.done {
+    background-color: #9f9f9f;
+    text-decoration: line-through;
+}
+.closeBtn {
+    background-color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+
+    position: absolute;
+    right: 10px;
+}
+.hide {
+    display: none !important;
+}
+.attn {
+    color: #777;
+    font-size: .8em;
+}
+.warning {
+    font-size: 0.8em;
+    width: 40%;
+}
+#instructions {
+    text-align: center;
+    margin-top: 0em;
+    font-size: 0.8em;
+    color: #08293a;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.infoBtn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+
+    color: white;
+    border: 1px solid #ffb703;
+    border-radius: 5px;
+    background-color: #777;
+
+    transition: 0.3s all ease;
+}
+.infoBtn:hover {
+    background-color: #aaa;
+}
+
+/*for responsive design*/ 
+@media (max-width: 500px) {
+    #title {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    .infoBtn {
+        top: 1%;
+    }
+    #instructions {
+        font-size: .6em;
+    }
+    input#todoInput {
+        width: 90%;
+    }
+    ul#list li {
+        width: 90%;
+    }
+    .infoBtn {
+        font-size: .7em;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do tracking list</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <!--Don't use span.tdtracker pls they're used for local storage key tracking-->
+    <div class="container">
+        <h1 id="title">TO-DO TRACKER</h1>
+
+        <p id="instructions">
+            Input your to-do activities in the text field below and press [Enter] to add to list
+            <br>
+            Click on an item to mark an item as complete
+            <br>
+            Click on the [X] to close an item
+            <br>
+        </p>
+        <p class="warning hide">
+            Note: Undone/unclosed items will remain in this list even after a browser/OS restart. However, if you
+            clear your browser data, your list will be lost forever!
+        </p>
+        <button class="infoBtn">Storage info</button>
+
+        <form id="input">
+            <input type="text" placeholder="New item to-do" id="todoInput" maxlength="30" required>
+            <!--
+            <button>
+                <img src="lib/arrow_down.png" alt="">
+            </button>
+            -->
+        </form>
+
+        <ul id="list">
+            <!--todo items go here-->
+        </ul>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
