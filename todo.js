@@ -21,7 +21,7 @@ let index = Math.ceil(Math.random()*999999999); //to ensure index always start o
 let key = `tdtracker${index}`;
 
 //storage stuff.. what a nightmare TT 
-if (localStorage.tdtracker) { 
+if (true) { 
 
     for(let i=0; i<localStorage.length; i++) {
         let key = localStorage.key(i);
@@ -35,11 +35,12 @@ if (localStorage.tdtracker) {
         ul.append(newLi);
       }
 }
-
+/*
 //to record on the user's browser that user has used page
 localStorage.tdtracker = '<p class="attn">Your list has been updated with your previously open undone items! (close this)</p>';
 //im gna hide the tracker ig lol
 document.querySelector('.attn').parentElement.classList.add('hide'); 
+*/
 
 
 
