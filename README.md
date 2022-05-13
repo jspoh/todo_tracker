@@ -1,5 +1,5 @@
 # To-do tracker <br>
-Available <a href="https://jspoh.github.io/projects/practical/todo_app">here</a> on both desktop and mobile <br>
+Available <a href="https://jspoh.github.io/projects/practical/todo_app/todo.html">here</a> on both desktop and mobile <br>
 To-do tracking list that stores data locally. So that you never lose your unclosed/undone to-do items.
 <hr>
 <img src="lib/main.PNG" alt="Photo of the to-do app"> 
