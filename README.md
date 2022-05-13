@@ -1,4 +1,4 @@
-# todo_tracker <br>
+# To-do tracker <br>
 Available <a href="https://jspoh.github.io/projects/practical/todo_app">here</a> on both desktop and mobile <br>
 To-do tracking list that stores data locally. So that you never lose your unclosed/undone to-do items.
 <hr>
